@@ -1,9 +1,15 @@
-import './App.css';
+import "./App.css";
+import CreateTask from "./Components/CreateTask";
+import Header from "./Components/Header";
 
 function App() {
+  const addTask =(newTask)=>{
+console.log(newTask);
+  }
   return (
     <div className="App">
-      Todo Uygulaması
+      <Header />
+      <CreateTask onAdd={addTask}/>
     </div>
   );
 }
